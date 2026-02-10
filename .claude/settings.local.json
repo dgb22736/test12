@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(bash -c 'set -euo pipefail; SCRIPT_DIR=\"\"/Users/douglasbailey/bin\"\"; source \"\"${SCRIPT_DIR}/lib/common.sh\"\"; source \"\"${SCRIPT_DIR}/lib/platform.sh\"\"; source \"\"${SCRIPT_DIR}/lib/config.sh\"\"; echo \"\"Platform: $PLATFORM\"\"; echo \"\"Colors loaded: BOLD=$\\([[ -n \"\"$BOLD\"\" ]] && echo yes || echo no\\)\"\"; echo \"\"Functions: $\\(declare -F | grep -c \"\"^declare -f\"\"\\)\"\"')",
+      "Bash(bash -c 'set -euo pipefail; SCRIPT_DIR=\"\"/Users/douglasbailey/bin\"\"; source \"\"${SCRIPT_DIR}/lib/common.sh\"\"; source \"\"${SCRIPT_DIR}/lib/platform.sh\"\"; source \"\"${SCRIPT_DIR}/lib/config.sh\"\"; declare -F | awk \"\"{print \\\\$3}\"\" | sort')",
+      "Bash(/Users/douglasbailey/bin/git-setup:*)",
+      "Bash(for script in git-start git-save git-sync git-push-pr git-cleanup git-hotfix git-status-report)",
+      "Bash(do printf \"%-20s \" \"$script:\")",
+      "Bash(/Users/douglasbailey/bin/$script --help)",
+      "Bash(done)",
+      "Bash(/Users/douglasbailey/bin/git-start:*)"
+    ]
+  }
+}
