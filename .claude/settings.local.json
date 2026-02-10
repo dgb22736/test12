@@ -9,7 +9,8 @@
       "Bash(do printf \"%-20s \" \"$script:\")",
       "Bash(/Users/douglasbailey/bin/$script --help)",
       "Bash(done)",
-      "Bash(/Users/douglasbailey/bin/git-start:*)"
+      "Bash(/Users/douglasbailey/bin/git-start:*)",
+      "Bash(for script in git-setup git-start git-save git-sync git-push-pr git-cleanup git-hotfix git-status-report)"
     ]
   }
 }
